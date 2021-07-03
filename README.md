@@ -3,4 +3,4 @@ mrtelekinesis Linux Configuration
 
 The main goal of this configuration is to achieve lower latency for x86 desktop PCs suitable for gaming or a low latency desktop in general.
 
-NOTICE: Some things that are disabled, might be needed for others, please read the files before using them and configure for yourself.
+NOTICE: Some settings that are disabled, might be needed for others, please read the files before using them and configure for yourself.
