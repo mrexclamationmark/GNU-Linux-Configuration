@@ -1,0 +1,15 @@
+# See the manpage fstab(5) for more information.
+UUID=setuuidhere	/	btrfs	defaults,sync,async,dirsync,noauto,group,owner,nouser,dev,exec,suid,noatime,lazytime,rw,autodefrag,space_cache=v2,commit=10 0 0
+UUID=setuuidhere /home	btrfs	defaults,sync,async,dirsync,auto,group,owner,nouser,exec,noatime,lazytime,nosuid,nodev,rw,autodefrag,space_cache=v2,commit=10 0 0
+
+# External
+UUID=setuuidhere	/run/mount/external	btrfs	defaults,sync,async,dirsync,noauto,group,owner,nouser,noexec,noatime,lazytime,nosuid,nodev,rw,autodefrag,space_cache=v2,commit=10 0 0
+
+proc /proc proc hidepid=2,gid=0,sync,async,dirsync,noatime,lazytime 0 0
+tmpfs /run tmpfs sync,async,dirsync,noatime,lazytime 0 0
+sysfs /sys sysfs sync,async,dirsync,noatime,lazytime 0 0
+configfs /sys/kernel/config configfs sync,async,dirsync,noatime,lazytime 0 0
+dev /dev devtmpfs sync,async,dirsync,noatime,lazytime 0 0
+devpts /dev/pts devpts sync,async,dirsync,noatime,lazytime,gid=5 0 0
+shm /dev/shm tmpfs sync,async,dirsync,noatime,lazytime 0 0
+tmpfs /var/tmp/portage tmpfs size=2G,gid=portage,uid=portage,mode=775,sync,async,dirsync,noatime,lazytime 0 0
