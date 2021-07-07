@@ -1,0 +1,7 @@
+# See the locale.gen(5) man page for more details.
+# Run locale-gen -a and say n to C.UTF-8 to override the UTF-8 for codeset ANSI_X3.4-1968 instead,
+# Otherwise it will generate C.UTF-8 UTF-8 by default and override what was set.
+# Run locale -a -v and see if all locales say codeset | ANSI_X3.4-1968 , if so then it is correct.
+C ANSI_X3.4-1968
+C.UTF-8 ANSI_X3.4-1968
+POSIX ANSI_X3.4-1968
