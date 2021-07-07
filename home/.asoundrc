@@ -1,5 +1,4 @@
 # Direct Hardware Configuration
-# Hardware Direct (No Software Conversions)
 #!pcm.!default {
 # type hw
 # card 0
