@@ -1,6 +1,6 @@
 **nftables.conf**
 
-This is a basic firewall configuration that only accepts connections from connections that are established within the system
+This is a basic firewall configuration that only accepts packets from connections that are established within the system
 
 connections from outside are dropped
 
