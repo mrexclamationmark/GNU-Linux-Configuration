@@ -1,3 +1,6 @@
+**dhcpcd.conf**
+change whitelist and static routers to your default gateway address
+
 **nftables.conf**
 
 This is a basic firewall configuration that only accepts packets from connections that are established within the system, connections from outside are dropped.
