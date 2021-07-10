@@ -1,4 +1,5 @@
 **dhcpcd.conf**
+
 change whitelist and static routers to your default gateway address
 
 **nftables.conf**
