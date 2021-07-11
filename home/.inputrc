@@ -1,0 +1,5 @@
+$include /etc/inputrc
+set completion-query-items 0
+set disable-completion on
+set history-size 0
+set page-completions off
