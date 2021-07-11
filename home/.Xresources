@@ -1,0 +1,25 @@
+URxvt.perl-ext:
+URxvt.perl-ext-common:
+URxvt.perl-eval:
+URxvt.perl-lib:
+URxvt.saveLines: 0
+URxvt.fading: 80
+URxvt.scrollWithBuffer: false
+URxvt.scrollTtyOutput: false
+URxvt.scrollBar: false
+URxvt.skipScroll: true
+URxvt.secondaryScreen: 1
+URxvt.secondaryScroll: 0
+URxvt.geometry: 80x30
+URxvt.font: xft:antialias=true
+URxvt.boldFont: xft:antialias=true
+URxvt.lineSpace: 0
+URxvt.foreground: #d6dfdc
+URxvt.background: #030404
+Xft.autohint: false
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintslight
+Xft.hinting: true
+Xft.antialias: true
+Xft.rgba: rgb
+Xft.dpi: 96
