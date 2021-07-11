@@ -5,6 +5,7 @@ Change whitelist and static routers to your default gateway address
 Change domain name servers to your routers default gateway address or the local address if you are using a dns client or hosts file (127.0.0.1)
 
 **fstab**
+
 Change UUID to match the your partitions UUID in lsblk -f
 
 Change btrfs to the filesystem you are using.
