@@ -1,0 +1,1 @@
+/usr/bin/jackd -R -T -ch -dalsa -H -M -Xseq -dhw:0 -D -znone -r44100 -p256 -n3
