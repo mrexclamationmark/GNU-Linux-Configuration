@@ -16,4 +16,6 @@ info (software utility) (Linux command)
 
 /usr/share/doc/
 
+Linux Kernel Documentation (linux-x.x.x/Documentation)
+
 https://wiki.nftables.org/wiki-nftables/index.php/Quick_reference-nftables_in_10_minutes
