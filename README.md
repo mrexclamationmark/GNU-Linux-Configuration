@@ -8,4 +8,10 @@ The main goal of this configuration is to achieve lower latency for x86 desktop 
 
 **Sources:**
 
-man-pages (manual pages)
+man-pages (manual pages) (Linux command)
+
+info (software utility) (Linux command)
+
+/usr/share/
+
+/usr/share/doc/
