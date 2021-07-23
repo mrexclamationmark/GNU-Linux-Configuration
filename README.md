@@ -15,3 +15,5 @@ info (software utility) (Linux command)
 /usr/share/
 
 /usr/share/doc/
+
+https://wiki.nftables.org/wiki-nftables/index.php/Quick_reference-nftables_in_10_minutes
