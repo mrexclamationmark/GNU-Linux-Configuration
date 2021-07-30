@@ -3,7 +3,15 @@ mrtelekinesis Linux Configuration
 
 **NOTICE: Please read the files before using them, there may be some settings that will not work with your system configuration or some that you may not want.**
 
-The main goal of this configuration is to achieve stability on the low latency spectrum by not being too fast or too slow, but in the middle (a balance), minimizeing jitter.
+The main goal of this configuration is to achieve stability by balancing between latency and throughput using 5ms-50ms-500ms sequence of milliseconds
+
+5ms = balanced low latency millisecond
+
+50ms = balanced mid latency millisecond
+
+500ms = balanced high latency millisecond
+
+some things need to be low latency and other things can get away with a higher ms value.
 
 **Sources:**
 
