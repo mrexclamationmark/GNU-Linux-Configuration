@@ -11,7 +11,7 @@ The main goal of this configuration is to achieve stability by balancing between
 
 500ms = balanced high latency millisecond
 
-some things need to be low latency and other things can get away with a higher ms value.
+some things need to be low latency and other things can get away with a higher ms value (increaseing total system throughput).
 
 **Sources:**
 
