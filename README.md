@@ -11,7 +11,7 @@ The main goal of this configuration is to achieve stability by balancing between
 
 500ms = balanced high latency millisecond
 
-750ms for realtime tasks (75% because realtime needs to run highest in priority) and 250ms for other tasks (75%/25%) leaving more processing room for other tasks.
+750ms for realtime tasks (75% because realtime needs to run highest in priority) and 250ms for other tasks (25%) leaving more processing room for other tasks.
 
 some things need to be low latency and other things can get away with a higher ms value (increaseing total system throughput).
 
