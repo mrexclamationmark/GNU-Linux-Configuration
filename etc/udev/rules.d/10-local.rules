@@ -11,13 +11,6 @@ ACTION=="add", SUBSYSTEM=="*", ATTR{power/autosuspend}="0"
 ACTION=="add", SUBSYSTEM=="*", ATTR{power/level}="auto"
 ACTION=="add", SUBSYSTEM=="*", ATTR{power/control}="auto"
 
-# USB Autosuspend Keyboard Whitelist
-ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="1a2c", ATTR{idProduct}=="4b5e", ATTR{power/control}="on"
-# USB Autosuspend Mouse Whitelist
-ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="4e53", ATTR{idProduct}="5406", ATTR{power/control}="on"
-# USB Autosuspend External Whitelist
-#ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}==" ", ATTR{idProduct}=" ", ATTR{power/control}="on"
-
 # IO Scheduler
 ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/scheduler}="bfq"
 ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/iosched/fifo_expire_async}="25"
