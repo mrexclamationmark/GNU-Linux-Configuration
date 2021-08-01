@@ -29,11 +29,11 @@ ACTION=="add", SUBSYSTEM=="net", KERNEL=="wl*|et*", ATTR{tx_queue_len}="50"
 ACTION=="add", SUBSYSTEM=="net", KERNEL=="wl*|et*", ATTR{mtu}="1400"
 
 # CPU Governor
-#ACTION=="add", SUBSYSTEM=="cpu", KERNEL=="cpu*", ATTR{cpufreq/scaling_governor}="schedutil"
+ACTION=="add", SUBSYSTEM=="cpu", KERNEL=="cpu*", ATTR{cpufreq/scaling_governor}="schedutil"
 ACTION=="add", SUBSYSTEM=="cpu", KERNEL=="cpu*", RUN+="/bin/sh -c 'echo 5000 | tee /sys/devices/system/cpu/cpufreq/schedutil/rate_limit_us'"
 
 # Sata Link Power Management
-#ACTION=="add", SUBSYSTEM=="scsi_host", KERNEL=="host*", ATTR{link_power_management_policy}="max_performance"
+ACTION=="add", SUBSYSTEM=="scsi_host", KERNEL=="host*", ATTR{link_power_management_policy}="max_performance"
 
 # RTC Timer Frequency
 ACTION=="add", SUBSYSTEM=="rtc", KERNEL=="rtc0", ATTR{max_user_freq}="1"
