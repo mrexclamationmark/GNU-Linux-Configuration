@@ -11,7 +11,7 @@ Sequences of 5ms-50ms-500ms
 
 Hertz: 2Hz-20Hz-200Hz
 
-75%/25% for 2 comparitives (75% for the one that needs to run the most or first and 25% for the other that needs to run the less)
+75%/25% for 2 comparitives (75% for the one that needs to run the most and 25% for the other that needs to run the less)
 
 **Sources:**
 
