@@ -7,7 +7,7 @@ The main goal of this configuration is to achieve stability by balancing between
 
 Formulas:
 
-Sequences of 5ms-50ms-500ms
+Milliseconds: 5ms-50ms-500ms
 
 Hertz: 2Hz-20Hz-200Hz
 
