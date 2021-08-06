@@ -7,11 +7,9 @@ The main goal of this configuration is to achieve stability by balancing between
 
 Formulas:
 
-Sequences of 2.5ms-25ms-250ms
+Sequences of 5ms-50ms-500ms
 
-Hertz: 4Hz-40Hz-400Hz
-
-75%/25% for 2 comparitives (75% for the one that needs to run the most and 25% for the other that needs to run the less)
+Hertz: 2Hz-20Hz-200Hz
 
 **Sources:**
 
