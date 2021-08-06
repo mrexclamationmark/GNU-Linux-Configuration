@@ -17,7 +17,7 @@ GRUB_DISTRIBUTOR="None"
 #GRUB_TIMEOUT_STYLE=menu
 
 # Append parameters to the linux kernel command line
-GRUB_CMDLINE_LINUX="loglevel=1 threadirqs video=640x480M@60 ahci.mobile_lpm_policy=1 pci=pcie_bus_safe cpuidle.governor=menu pcie_aspm.policy=performance align_va_addr=on psmouse.rate=400 vt.default_utf8=0 no_debug_objects dma_debug=off lockdown=confidentiality usbhid.mousepoll=2 usbhid.kbpoll=2 usbhid.jspoll=2 pty.legacy_count=8 rcutree.rcu_resched_ns=2500000"
+GRUB_CMDLINE_LINUX="loglevel=1 threadirqs video=640x480M@60 ahci.mobile_lpm_policy=1 pci=pcie_bus_safe cpuidle.governor=menu pcie_aspm.policy=performance align_va_addr=on psmouse.rate=200 vt.default_utf8=0 no_debug_objects dma_debug=off lockdown=confidentiality usbhid.mousepoll=5 usbhid.kbpoll=5 usbhid.jspoll=5 pty.legacy_count=8 rcutree.rcu_resched_ns=5000000"
 #GRUB_EARLY_INITRD_LINUX_CUSTOM="acpitables.cpio"
 # Examples:
 #
