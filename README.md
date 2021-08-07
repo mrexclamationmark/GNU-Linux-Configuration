@@ -3,13 +3,13 @@ mrtelekinesis Linux Configuration
 
 **NOTICE: Please read the files before using them, there may be some settings that will not work with your system configuration or some that you may not want.**
 
-The main goal of this configuration is to achieve stability by balancing between latency and throughput.
+The main goal of this configuration is to achieve stability on the low latency spectrum
 
 Formulas:
 
-Milliseconds: 5ms-50ms-500ms
+Milliseconds: 5ms
 
-Hertz: 2Hz-20Hz-200Hz
+Hertz: 200Hz
 
 **Sources:**
 
