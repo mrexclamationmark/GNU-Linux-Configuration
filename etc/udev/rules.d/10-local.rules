@@ -15,18 +15,18 @@ ACTION=="add", SUBSYSTEM=="*", ATTR{power/control}="auto"
 # I/O Scheduler
 ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/scheduler}="bfq"
 ACTION=="add", SUBSYSTEM=="block", KERNEL=="nvme*|mmcblk*", ATTR{queue/scheduler}="none"
-ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/fifo_expire_async}="50"
-ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/fifo_expire_sync}="50"
-ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/timeout_sync}="50"
-ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/slice_idle_us}="50000"
-ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/io_timeout}="50000"
-ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/wbt_lat_usec}="50000"
+ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/fifo_expire_async}="5"
+ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/fifo_expire_sync}="5"
+ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/timeout_sync}="5"
+ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/slice_idle_us}="5000"
+ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/io_timeout}="5000"
+ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/wbt_lat_usec}="5000"
 
 # Network Scheduler
 ACTION=="add", SUBSYSTEM=="net", KERNEL=="lo", ATTR{tx_queue_len}="50"
 ACTION=="add", SUBSYSTEM=="net", KERNEL=="lo", ATTR{mtu}="65536"
 ACTION=="add", SUBSYSTEM=="net", KERNEL=="wl*|et*", ATTR{tx_queue_len}="50"
-ACTION=="add", SUBSYSTEM=="net", KERNEL=="wl*|et*", ATTR{mtu}="750"
+ACTION=="add", SUBSYSTEM=="net", KERNEL=="wl*|et*", ATTR{mtu}="1400"
 
 # CPU Governor
 ACTION=="add", SUBSYSTEM=="cpu", KERNEL=="cpu*", ATTR{cpufreq/scaling_governor}="schedutil"
