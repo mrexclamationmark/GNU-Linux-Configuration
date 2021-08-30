@@ -1,2 +1,2 @@
 #!/bin/sh
-exec /usr/bin/X -a 0.0 -br -nopn -schedInterval 5 -quiet -nolisten tcp -nolisten inet -nolisten inet6 -nolisten local -tst
+exec /usr/bin/X -a 0.0 -br -nopn -schedInterval 5000 -quiet -nolisten tcp -nolisten inet -nolisten inet6 -nolisten local -tst
