@@ -10,4 +10,4 @@ configfs /sys/kernel/config configfs sync,async,dirsync,noatime,lazytime 0 0
 dev /dev devtmpfs sync,async,dirsync,noatime,lazytime 0 0
 devpts /dev/pts devpts sync,async,dirsync,noatime,lazytime,gid=5 0 0
 shm /dev/shm tmpfs sync,async,dirsync,noatime,lazytime,huge=advise 0 0
-tmpfs /var/tmp/portage tmpfs size=95%,mode=775,gid=portage,uid=portage,huge=advise,sync,async,dirsync,noatime,lazytime 0 0
+#tmpfs /var/tmp/portage tmpfs size=95%,mode=775,gid=portage,uid=portage,huge=advise,sync,async,dirsync,noatime,lazytime 0 0
