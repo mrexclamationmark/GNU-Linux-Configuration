@@ -12,7 +12,7 @@ ACTION=="add", SUBSYSTEM=="*", ATTR{power/control}="auto"
 ACTION=="add", SUBSYSTEM=="usb", ATTR{power/control}="on"
 
 # I/O Scheduler
-ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/scheduler}="none"
+ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/scheduler}="bfq"
 ACTION=="add", SUBSYSTEM=="block", KERNEL=="nvme*|mmcblk*", ATTR{queue/scheduler}="none"
 ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/fifo_expire_async}="5"
 ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/fifo_expire_sync}="5"
