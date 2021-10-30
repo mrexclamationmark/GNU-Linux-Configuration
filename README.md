@@ -5,13 +5,8 @@ mrtelekinesis Linux Configuration
 
 The main goal of this configuration is to achieve stability on the low latency spectrum (security configurations included).
 
-Formulas:
-
-Milliseconds: 5ms
-
-Hertz: 200Hz
-
 **Tips:**
+
 If you have a small amount of CPU cores, do not use mesa_glthread or threadirqs
 
 **Sources:**
