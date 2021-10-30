@@ -11,6 +11,9 @@ Milliseconds: 5ms
 
 Hertz: 200Hz
 
+**Tips:**
+If you have a small amount of CPU cores, do not use mesa_glthread or threadirqs
+
 **Sources:**
 
 man (software utility, manual pages) (Linux command)
