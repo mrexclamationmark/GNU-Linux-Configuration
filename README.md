@@ -7,7 +7,7 @@ The main goal of this configuration is to achieve stability on the low latency s
 
 **Tips:**
 
-If you have a small amount of CPU cores, do not use mesa_glthread or threadirqs
+If you have a small amount of CPU cores (1, 2, 4 cores), do not use mesa_glthread or threadirqs
 
 **Sources:**
 
