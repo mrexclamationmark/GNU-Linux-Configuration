@@ -12,9 +12,13 @@ Change btrfs to the filesystem you are using.
 
 **nftables.conf**
 
-This is a basic firewall configuration that only accepts packets from connections that are established within the system, new connections made from outside are dropped.
+This is a basic firewall configuration that includes ingress, arp and ip filter tables (IPV4 only).
 
-ARP packets are only accepted from the router configured by the /etc/sysctl.d/local.conf file (net.ipv4.conf.all.arp_ignore = 3)
+It only accepts packets from port 53 (DNS) and 443 (HTTPS) on inbound.
+
+xx:xx:xx:xx:xx:xx is for filling in the blanks (the routers MAC address or devices on the router (2.4Ghz, 5Ghz or ethernet MAC addresses from the router).
+
+Check the nftables reference link on the main page for more information.
 
 **resolv.conf**
 
