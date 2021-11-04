@@ -12,7 +12,7 @@ Change btrfs to the filesystem you are using.
 
 **nftables.conf**
 
-This is a basic firewall configuration that includes ingress, arp and ip filter tables (IPV4 only).
+This is a basic stateful firewall configuration that includes ingress, arp and ip filter tables (IPV4 only).
 
 It only accepts packets from port 53 (DNS) and 443 (HTTPS) on inbound.
 
