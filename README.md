@@ -21,4 +21,4 @@ info (software utility) (Linux command)
 
 Linux Kernel Documentation (linux-x.x.x/Documentation)
 
-https://wiki.nftables.org/wiki-nftables/index.php/Quick_reference-nftables_in_10_minutes
+https://wiki.nftables.org/wiki-nftables/index.php/Main_Page
