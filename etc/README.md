@@ -12,17 +12,23 @@ Change btrfs to the filesystem you are using.
 
 **nftables.conf**
 
-This is a basic stateful firewall configuration that includes ingress, arp and ip filter tables (IPV4 only).
+This is a basic ingress stateful firewall configuration (IPV4 only).
 
 It only accepts packets from port 53 (DNS) and 443 (HTTPS) on inbound.
 
-xx:xx:xx:xx:xx:xx is for filling in the blanks (the routers MAC address or devices on the router (2.4Ghz, 5Ghz or ethernet MAC addresses from the router).
+xx:xx:xx:xx:xx:xx is for filling in the blanks (the routers MAC address or devices in the router (2.4Ghz, 5Ghz or ethernet MAC addresses).
+
+To use ingress with ethernet, you need to use arp saddr to accept ARP packets only from the router.
+
+To use ingress with wireless, you need to use ether saddr to accept EAP packets from the wireless devices located in the router (2.4Ghz device or 5Ghz device).
+
+When using ingress with wireless, you also need to accept ARP packets from the routers ethernet device.
 
 A stateful firewall (ct state) is more secure, but at the cost of performance (useful for servers, general PC computers)
 
 A stateless firewall is less secure, but has better performance (useful for gaming PCs, where low latency is needed)
 
-Check the nftables reference link on the main page for more information.
+Check the nftables wiki link on the main page for more information.
 
 **resolv.conf**
 
