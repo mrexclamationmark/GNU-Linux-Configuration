@@ -24,9 +24,9 @@ To use ingress with ethernet, you need to use arp saddr to accept ARP packets on
 
 To use ingress with wireless, you need to use ether saddr to accept EAP packets from the wireless devices located in the router (2.4Ghz device or 5Ghz device) and you also need to accept ARP packets from the routers ethernet device.
 
-A stateful firewall (ct state) is more secure, but at the cost of performance (useful for servers, general PC computers)
+Using a stateful firewall (ct state) is more secure, but at the cost of performance (useful for servers, general PC computers).
 
-A stateless firewall is less secure, but has better performance (useful for gaming PCs, where low latency is needed)
+Using a stateless firewall is less secure, but has better performance (useful for gaming PCs, where low latency is needed).
 
 Check the nftables wiki link on the main page for more information.
 
