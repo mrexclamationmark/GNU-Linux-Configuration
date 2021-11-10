@@ -1,9 +1,7 @@
 # Linux-Configuration
-mrtelekinesis Linux Configuration
+mrtelekinesis Low-latency Linux Configuration
 
 **NOTICE: Please read the files before using them, there may be some settings that will not work with your system configuration or some that you may not want.**
-
-The main goal of this configuration is to achieve stability on the low latency spectrum (security configurations included).
 
 **Tips:**
 
