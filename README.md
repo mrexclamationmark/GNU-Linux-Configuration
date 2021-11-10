@@ -1,7 +1,9 @@
 # Linux-Configuration
-mrtelekinesis Low-latency Linux Configuration
+mrtelekinesis Low-latency Linux Configuration (with security configurations).
 
 **NOTICE: Please read the files before using them, there may be some settings that will not work with your system configuration or some that you may not want.**
+
+These files are mostly examples for the user to configure.
 
 **Tips:**
 
