@@ -18,11 +18,11 @@ It only accepts packets from port 53 (DNS) and 443 (HTTPS) on inbound.
 
 xx:xx:xx:xx:xx:xx is for filling in the blanks (the routers MAC address or devices in the router (2.4Ghz, 5Ghz or ethernet MAC addresses).
 
+To use ingress, change NETDEVICE to the network interface name in ifconfig (wlan0, eth0, etc)
+
 To use ingress with ethernet, you need to use arp saddr to accept ARP packets only from the router.
 
-To use ingress with wireless, you need to use ether saddr to accept EAP packets from the wireless devices located in the router (2.4Ghz device or 5Ghz device).
-
-When using ingress with wireless, you also need to accept ARP packets from the routers ethernet device.
+To use ingress with wireless, you need to use ether saddr to accept EAP packets from the wireless devices located in the router (2.4Ghz device or 5Ghz device) and you also need to accept ARP packets from the routers ethernet device.
 
 A stateful firewall (ct state) is more secure, but at the cost of performance (useful for servers, general PC computers)
 
