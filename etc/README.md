@@ -18,6 +18,8 @@ It only accepts packets from port 53 (DNS) and 443 (HTTPS) on inbound.
 
 xx:xx:xx:xx:xx:xx is for filling in the blanks (the routers MAC address or devices in the router (2.4Ghz, 5Ghz or ethernet MAC addresses).
 
+Fill in ip saddr xxx.xxx.x.x with the default routers IP address to only accept ICMP packets from the router.
+
 To use ingress, change NETDEVICE to the network interface name in ifconfig (wlan0, eth0, etc)
 
 To use ingress with ethernet, you need to use arp saddr to accept ARP packets only from the router.
