@@ -1,6 +1,3 @@
-# Linux-Configuration
-mrtelekinesis Low-latency Linux Configuration (with security configurations).
-
 **Navigation:**
 
 Linux-Kernel-Configuration: https://github.com/mrtelekinesis/Linux-Kernel-Configuration
