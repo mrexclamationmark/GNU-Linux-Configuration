@@ -11,7 +11,7 @@ GRUB_TIMEOUT=5
 GRUB_TIMEOUT_STYLE=menu
 
 # Append parameters to the linux kernel command line
-GRUB_CMDLINE_LINUX="loglevel=1 video=640x480M@60 consoleblank=60 align_va_addr=on psmouse.rate=200 no_debug_objects dma_debug=off lockdown=confidentiality usbhid.mousepoll=5 usbhid.kbpoll=5 usbhid.jspoll=5 rcutree.rcu_resched_ns=5000000 ahci.mobile_lpm_policy=1 pci=pcie_bus_safe cpuidle.governor=menu pcie_aspm.policy=powersupersave init_on_alloc=1 init_on_free=1 randomize_kstack_offset=on slab_nomerge pti=on slub_debug=ZF slub_debug=P page_poison=1 vsyscall=none"
+GRUB_CMDLINE_LINUX="loglevel=1 video=640x480M@60 consoleblank=60 align_va_addr=on psmouse.rate=200 vt.default_utf8=0 no_debug_objects dma_debug=off lockdown=confidentiality usbhid.mousepoll=5 usbhid.kbpoll=5 usbhid.jspoll=5 rcutree.rcu_resched_ns=5000000 ahci.mobile_lpm_policy=1 pci=pcie_bus_safe cpuidle.governor=menu pcie_aspm.policy=powersupersave init_on_alloc=1 init_on_free=1 randomize_kstack_offset=on slab_nomerge pti=on slub_debug=ZF slub_debug=P page_poison=1 vsyscall=none"
 #GRUB_EARLY_INITRD_LINUX_CUSTOM="acpitables.cpio"
 
 # Recommended Options for more than 4 cores
