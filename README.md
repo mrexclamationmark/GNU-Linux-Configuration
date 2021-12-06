@@ -10,7 +10,7 @@ GNU-Linux-Scripts: https://github.com/mrtelekinesis/GNU-Linux-Scripts
 
 CFS tweaks, network tweaks and memory tweaks are tuned for low latency in a balanced way (less overhead on the low latency spectrum).
 
-Security tweaks are mitigated at the cost of compatiblity (works out of the box) and possibly performance (security first, performance after).
+Security tweaks are mitigated at the cost of compatiblity (works out of the box) and some performance (security first, performance after).
 
 **Tips:**
 
