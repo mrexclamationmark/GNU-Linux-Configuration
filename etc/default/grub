@@ -1,72 +1,36 @@
 # Distributed under the terms of the GNU General Public License v2
-#
-# To populate all changes in this file you need to regenerate your
-# grub configuration file afterwards:
-#     'grub-mkconfig -o /boot/grub/grub.cfg'
-#
-# See the grub info page for documentation on possible variables and
-# their associated values.
+# After modifying, run grub-mkconfig -o /boot/grub/grub.cfg
 
-GRUB_DISTRIBUTOR="None"
+GRUB_DISTRIBUTOR="mrtelekinesis"
 
 # Default menu entry
-#GRUB_DEFAULT=0
+GRUB_DEFAULT=0
 
 # Boot the default entry this many seconds after the menu is displayed
-#GRUB_TIMEOUT=5
-#GRUB_TIMEOUT_STYLE=menu
+GRUB_TIMEOUT=5
+GRUB_TIMEOUT_STYLE=menu
 
 # Append parameters to the linux kernel command line
-GRUB_CMDLINE_LINUX="loglevel=1 threadirqs video=640x480M@60 ahci.mobile_lpm_policy=1 pci=pcie_bus_safe cpuidle.governor=menu pcie_aspm.policy=performance align_va_addr=on psmouse.rate=200 vt.default_utf8=0 no_debug_objects dma_debug=off lockdown=confidentiality usbhid.mousepoll=5 usbhid.kbpoll=5 usbhid.jspoll=5 rcutree.rcu_resched_ns=5000000"
+GRUB_CMDLINE_LINUX="loglevel=1 video=640x480M@60 consoleblank=60 align_va_addr=on psmouse.rate=200 no_debug_objects dma_debug=off lockdown=confidentiality usbhid.mousepoll=5 usbhid.kbpoll=5 usbhid.jspoll=5 rcutree.rcu_resched_ns=5000000 ahci.mobile_lpm_policy=1 pci=pcie_bus_safe cpuidle.governor=menu pcie_aspm.policy=powersupersave init_on_alloc=1 init_on_free=1 randomize_kstack_offset=on slab_nomerge pti=on slub_debug=ZF slub_debug=P page_poison=1 vsyscall=none"
 #GRUB_EARLY_INITRD_LINUX_CUSTOM="acpitables.cpio"
-# Examples:
-#
-# Boot with network interface renaming disabled
-# GRUB_CMDLINE_LINUX="net.ifnames=0"
-#
-# Boot with systemd instead of sysvinit (openrc)
-# GRUB_CMDLINE_LINUX="init=/usr/lib/systemd/systemd"
 
-# Append parameters to the linux kernel command line for non-recovery entries
-#GRUB_CMDLINE_LINUX_DEFAULT=""
+# Recommended Options for more than 4 cores
+# threadirqs
 
 # Uncomment to disable graphical terminal (grub-pc only)
 GRUB_TERMINAL=console
 
-# The resolution used on graphical terminal.
-# Note that you can use only modes which your graphic card supports via VBE.
-# You can see them in real GRUB with the command `vbeinfo'.
-#GRUB_GFXMODE=640x480
+# Grub resolution
+GRUB_GFXMODE=640x480
 
-# Set to 'text' to force the Linux kernel to boot in normal text
-# mode, 'keep' to preserve the graphics mode set using
-# 'GRUB_GFXMODE', 'WIDTHxHEIGHT'['xDEPTH'] to set a particular
-# graphics mode, or a sequence of these separated by commas or
-# semicolons to try several modes in sequence.
-#GRUB_GFXPAYLOAD_LINUX=keep
+# Text mode
+GRUB_GFXPAYLOAD_LINUX=text
 
-# Path to theme spec txt file.
-# The starfield is by default provided with use truetype.
-# NOTE: when enabling custom theme, ensure you have required font/etc.
-#GRUB_THEME="/boot/grub/themes/starfield/theme.txt"
+# Disable recovery menu generation
+GRUB_DISABLE_RECOVERY=true
 
-# Background image used on graphical terminal.
-# Can be in various bitmap formats.
-#GRUB_BACKGROUND="/boot/grub/mybackground.png"
+# Disable Submenu
+GRUB_DISABLE_SUBMENU=y
 
-# Uncomment if you don't want GRUB to pass "root=UUID=xxx" parameter to kernel
-#GRUB_DISABLE_LINUX_UUID=true
-
-# Uncomment to disable generation of recovery mode menu entries
-#GRUB_DISABLE_RECOVERY=true
-
-# Uncomment to disable generation of the submenu and put all choices on
-# the top-level menu.
-# Besides the visual affect of no sub menu, this makes navigation of the
-# menu easier for a user who can't see the screen.
-#GRUB_DISABLE_SUBMENU=y
-
-# Uncomment to play a tone when the main menu is displayed.
-# This is useful, for example, to allow users who can't see the screen
-# to know when they can make a choice on the menu.
-#GRUB_INIT_TUNE="60 800 1"
+# Disable OS-Prober
+GRUB_DISABLE_OS_PROBER=true
