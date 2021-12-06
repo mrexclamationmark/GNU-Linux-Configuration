@@ -4,13 +4,13 @@ Linux-Kernel-Configuration: https://github.com/mrtelekinesis/Linux-Kernel-Config
  
 GNU-Linux-Scripts: https://github.com/mrtelekinesis/GNU-Linux-Scripts
 
-**NOTICE: Please read the files before using them, there may be some settings that will not work with your system configuration or some that you may not want.**
+**NOTICE: Please read the files before using them and set them up for your needs, there may be some settings that will not work with your system configuration or some that you may not want.**
 
 **Info:**
 
-These files are mostly examples for the user to configure.
-
 CFS tweaks, network tweaks and memory tweaks are tuned for low latency in a balanced way (less overhead on the low latency spectrum).
+
+Security tweaks are mitigated at the cost of compatiblity (works out of the box) and possibly performance (security first, performance after).
 
 **Tips:**
 
