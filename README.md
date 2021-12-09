@@ -8,7 +8,7 @@ GNU-Linux-Scripts: https://github.com/mrtelekinesis/GNU-Linux-Scripts
 
 **Info:**
 
-CFS tweaks, network tweaks and memory tweaks are tuned for low latency in a balanced way (less overhead on the low latency spectrum).
+CFS tweaks, network tweaks (tuned for small packets) and memory tweaks are tuned for low latency in a balanced way.
 
 Security tweaks are mitigated at the cost some performance (security first, performance after).
 
