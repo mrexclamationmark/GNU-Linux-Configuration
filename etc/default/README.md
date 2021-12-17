@@ -4,4 +4,4 @@ threadirqs can cause slow I/O transfers and other buggy driver related issues on
 
 Use cpuidle.governor=menu for tickless and cpuidle.governor=ladder for periodic tick kernels, you can also use cpuidle.governor=teo which is another alternative tickless idle governor.
 
-usbcore.authorized_default=2 can be used for laptops that do not use any external usb devices (usb keyboards, usb mouses, usb storage drives, etc) preventing rogue usbs from being initialized.
+usbcore.authorized_default=2 can be used for systems (laptops, etc) that do not use any external usb devices (usb keyboards, usb mouses, usb storage drives, etc) preventing rogue usbs from being initialized.
