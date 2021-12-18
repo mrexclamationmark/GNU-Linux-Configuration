@@ -6,6 +6,10 @@ GNU-Linux-Scripts: https://github.com/mrtelekinesis/GNU-Linux-Scripts
 
 **NOTICE: Please read the files before using them and set them up for your needs, there may be some settings that will not work with your system configuration or some that you may not want.**
 
+**Testing:**
+
+Configuration files were tested under x86-64 Gentoo Linux.
+
 **Info:**
 
 CFS tweaks, network tweaks (tuned for byte sized packets) and memory tweaks are tuned for low latency in a balanced way.
