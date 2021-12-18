@@ -9,7 +9,13 @@
 # Power Save On All Devices
 ACTION=="add", SUBSYSTEM=="*", ATTR{power/autosuspend}="0"
 ACTION=="add", SUBSYSTEM=="*", ATTR{power/control}="auto"
-ACTION=="add", SUBSYSTEM=="usb", ATTR{power/control}="on"
+#ACTION=="add", SUBSYSTEM=="usb", ATTR{power/control}="on"
+
+# USB Autosuspend Whitelist
+ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="xxxx", ATTRS{idProduct}=="xxxx", ATTR{power/control}="on"
+
+# USB Authorized Whitelist
+ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="xxxx", ATTRS{idProduct}=="xxxx", ATTR{authorized}="1"
 
 # I/O Scheduler
 ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/scheduler}="bfq"
