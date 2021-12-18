@@ -8,7 +8,7 @@ GNU-Linux-Scripts: https://github.com/mrtelekinesis/GNU-Linux-Scripts
 
 **Testing:**
 
-Configuration files were tested under x86-64 Gentoo Linux.
+Configuration files were tested under x86-64 Gentoo Linux (OpenRC).
 
 **Info:**
 
