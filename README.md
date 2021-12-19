@@ -22,7 +22,7 @@ Configuration files were tested under x86-64 Gentoo Linux (OpenRC).
 
 **Troubleshooting:**
 
-If something goes wrong, you can use a linux distro to mount the partition and delete the file or change the problematic setting.
+If something goes wrong, you can use a live usb linux distro to mount the partition and delete the file or change the problematic setting.
 
 **Sources:**
 
