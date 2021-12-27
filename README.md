@@ -18,7 +18,7 @@ If you have a small amount of CPU cores (1, 2, 4 cores), do not use mesa_glthrea
 
 **Testing:**
 
-Configuration files were tested under x86-64 Gentoo Linux (OpenRC).
+Configuration files were tested under x86-64 Gentoo Linux (OpenRC) and Arch Linux (Systemd).
 
 **Troubleshooting:**
 
