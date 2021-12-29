@@ -1,0 +1,5 @@
+#!/sbin/openrc-run
+
+description="Qdisc OpenRC Service"
+command="/sbin/tc"
+command_args="qdisc replace dev wlan0 root cake bandwidth 2Mbit besteffort flowblind nonat nowash no-ack-filter split-gso rtt 5ms raw overhead 0"
