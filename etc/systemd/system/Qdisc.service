@@ -1,4 +1,4 @@
-# (CAKE) Use flows for multiple network connections or flowblind for single network connections.
+# (CAKE) Use flows for multiple network connections or flowblind for a single network connection.
 
 [Unit]
 Description=Qdisc Systemd Service
