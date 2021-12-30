@@ -1,4 +1,5 @@
 #!/sbin/openrc-run
+# (CAKE) Use flows for multiple network connections or flowblind for single network connections.
 
 description="Qdisc OpenRC Service"
 command="/sbin/tc"
