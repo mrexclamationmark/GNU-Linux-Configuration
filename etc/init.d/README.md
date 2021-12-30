@@ -1,4 +1,4 @@
-To use Qdisc as an OpenRC service
+To use Qdisc (OpenRC service)
 
 copy qdisc to /etc/init.d/
 
