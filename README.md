@@ -8,7 +8,7 @@ GNU-Linux-Scripts: https://github.com/mrtelekinesis/GNU-Linux-Scripts
 
 **Info:**
 
-CFS tweaks, network tweaks (tuned for byte sized packets) and memory tweaks are tuned for low latency in a balanced way.
+CFS tweaks, network tweaks and memory tweaks are tuned for low latency in a balanced way.
 
 Security tweaks are mitigated at the cost some performance (security first, performance after).
 
@@ -18,7 +18,7 @@ If you have a small amount of CPU cores (1, 2, 4 cores), do not use mesa_glthrea
 
 **Testing:**
 
-Configuration files were tested under x86-64 Gentoo Linux (OpenRC) and Arch Linux (Systemd).
+Configuration files were tested under x86-64 Gentoo Linux (OpenRC) and x86-64 Arch Linux (Systemd).
 
 **Troubleshooting:**
 
