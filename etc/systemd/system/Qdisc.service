@@ -4,7 +4,7 @@
 Description=Qdisc Systemd Service
 
 [Service]
-ExecStart=/sbin/tc qdisc replace dev wlan0 root cake bandwidth 16Mbit besteffort flowblind nonat nowash no-ack-filter split-gso rtt 5ms raw overhead 0
+ExecStart=/sbin/tc qdisc replace dev wlan0 root cake bandwidth 16Mbit besteffort flowblind nonat nowash no-ack-filter split-gso rtt 5ms raw overhead 0 memlimit 64Mb
 
 [Install]
 WantedBy=multi-user.target
