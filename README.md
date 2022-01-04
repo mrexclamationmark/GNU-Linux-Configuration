@@ -12,7 +12,7 @@ Each subsystem tweaks is tuned for low latency in a balanced way (Equalness, whi
 
 CFS tweaks: Tuned for low latency in a balanced way (To reduce CPU overhead).
 
-Memory tweaks: Tuned to Balance CPU usage and reduce memory footprint.
+Memory tweaks: Tuned to balance CPU usage and reduce memory footprint.
 
 Network tweaks: Network buffers tuned for small byte sized packets to reduce memory footprint (at the cost of bandwidth throughput, but better network memory latency) and using qdisc cake and TCP westwood to defeat bufferbloat.
 
