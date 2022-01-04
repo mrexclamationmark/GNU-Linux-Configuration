@@ -6,11 +6,17 @@ GNU-Linux-Scripts: https://github.com/mrtelekinesis/GNU-Linux-Scripts
 
 **NOTICE: Please read the files before using them and set them up for your needs, there may be some settings that will not work with your system configuration or some that you may not want.**
 
-**Info:**
+**Tweaks:**
 
-CFS tweaks, network tweaks and memory tweaks are tuned for low latency in a balanced way.
+Each subsystem tweaks are tuned for low latency in a balanced way (Equalness, while keeping the low latency idea).
 
-Security tweaks are mitigated at the cost some performance (security first, performance after).
+CFS tweaks: Tuned for low latency in a balanced way (To reduce CPU overhead).
+
+Network tweaks: Tuned for small byte sized packets to reduce memory footprint (at the cost of bandwidth throughput, but better network memory latency).
+
+Memory tweaks: Tuned to Balance CPU usage and reduce memory footprint.
+
+Security tweaks: Is mitigated at the cost some performance (security first, performance after).
 
 **Tips:**
 
