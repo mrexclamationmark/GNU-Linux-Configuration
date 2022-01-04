@@ -8,7 +8,7 @@ GNU-Linux-Scripts: https://github.com/mrtelekinesis/GNU-Linux-Scripts
 
 **Tweaks:**
 
-Each subsystem tweaks are tuned for low latency in a balanced way (Equalness, while keeping the low latency idea).
+Each subsystem tweaks is tuned for low latency in a balanced way (Equalness, while keeping the low latency idea).
 
 CFS tweaks: Tuned for low latency in a balanced way (To reduce CPU overhead).
 
