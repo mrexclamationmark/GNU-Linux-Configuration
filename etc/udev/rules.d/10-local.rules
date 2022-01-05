@@ -30,7 +30,7 @@ ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/wbt_l
 # Network Scheduler
 ACTION=="add", SUBSYSTEM=="net", KERNEL=="lo", ATTR{tx_queue_len}="500"
 ACTION=="add", SUBSYSTEM=="net", KERNEL=="lo", ATTR{mtu}="4096"
-ACTION=="add", SUBSYSTEM=="net", KERNEL=="wl*|et*", ATTR{tx_queue_len}="500"
+ACTION=="add", SUBSYSTEM=="net", KERNEL=="wl*|et*", ATTR{tx_queue_len}="50"
 ACTION=="add", SUBSYSTEM=="net", KERNEL=="wl*|et*", ATTR{mtu}="1425"
 
 # CPU Governor
