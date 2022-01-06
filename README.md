@@ -8,13 +8,11 @@ GNU-Linux-Scripts: https://github.com/mrtelekinesis/GNU-Linux-Scripts
 
 **Tweaks:**
 
-Each subsystem tweaks is tuned for low latency in a balanced way (Equalness, while keeping the low latency idea).
-
 CFS tweaks: Tuned for low latency in a balanced way (To reduce CPU overhead).
 
 Memory tweaks: Tuned to balance CPU usage and reduce memory footprint.
 
-Network tweaks: Network buffers tuned to 2Mb and using qdisc cake and TCP westwood to defeat bufferbloat.
+Network tweaks: Network buffers tuned to 2Mb and using qdisc cake and TCP westwood to defeat bufferbloat (with the qdisc (OpenRC/Systemd) service).
 
 I/O tweaks: Tuned for low latency using BFQ for mechanical harddrives, SSD's and flash memory use no I/O scheduler.
 
