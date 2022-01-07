@@ -12,7 +12,7 @@ CFS tweaks: Tuned for low latency in a balanced way (To reduce CPU overhead).
 
 Memory tweaks: Tuned to balance CPU usage and reduce memory footprint.
 
-Network tweaks: Network buffers tuned to 2Mb, using qdisc cake and TCP westwood to prevent bufferbloat (with the qdisc (OpenRC/Systemd) service).
+Network tweaks: Network buffers tuned to 2Mb, using qdisc cake and TCP westwood to minimize bufferbloat (with the qdisc (OpenRC/Systemd) service).
 
 I/O tweaks: Tuned for low latency using BFQ for mechanical harddrives, SSD's and flash memory use no I/O scheduler.
 
