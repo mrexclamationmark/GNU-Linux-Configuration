@@ -9,4 +9,4 @@ usbcore.authorized_default=0 can be used for systems (laptops, etc) that do not 
 
 **PREEMPT_DYNAMIC**
 
-The option preempt= is buggy with kernels built without PREEMPT_DYNAMIC (CONFIG_PREEMPT_DYNAMIC=n) for now it is removed from GRUB_CMDLINE_LINUX.
+The option preempt= is buggy(restarts/freezes) with kernels built without PREEMPT_DYNAMIC (CONFIG_PREEMPT_DYNAMIC=n) for now it is removed from GRUB_CMDLINE_LINUX.
