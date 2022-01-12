@@ -22,7 +22,7 @@ Security tweaks: Is mitigated at the cost some performance (security first, perf
 
 **Tips:**
 
-If you have a small amount of CPU cores (1, 2, 4 cores), do not use mesa_glthread or threadirqs
+If you have a small amount of CPU cores (1, 2, 4 cores), do not use mesa_glthread or threadirqs (with less cores, less threads is usually better).
 
 **Testing:**
 
