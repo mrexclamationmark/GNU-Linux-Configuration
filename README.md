@@ -8,7 +8,7 @@ GNU-Linux-Scripts: https://github.com/mrtelekinesis/GNU-Linux-Scripts
 
 **Info:**
 
-mrtelekinesis's linux setup is based off ideas of obtaining more free CPU resources by disableing options (and enableing ones that are not enabled by default for certain purposes (low memory conditions, etc) ) and creating mathematical ideas of balance (which is used to tune certain options) while obtaining low latency and better throughput.
+mrtelekinesis's linux setup is based off ideas of obtaining more free CPU resources by disableing options (and enableing ones that are not enabled by default for certain purposes (low memory conditions, works for everybody, etc) ) and creating mathematical ideas of balance (which is used to tune certain options) while obtaining low latency and better throughput.
 
 **Tips:**
 
