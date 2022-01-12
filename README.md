@@ -4,7 +4,7 @@ Linux-Kernel-Configuration: https://github.com/mrtelekinesis/Linux-Kernel-Config
  
 GNU-Linux-Scripts: https://github.com/mrtelekinesis/GNU-Linux-Scripts
 
-**Please read the configuration files carefully before applying it. You are responsible for actions done to your system. If you need some help understanding on what each of the settings do, there is many documentations out there to read as you can find them using a search engine**
+**Please read the configuration files carefully before using it. You are responsible for actions done to your system. If you need some help understanding on what each of the settings do, there is many documentations out there to read as you can find them using a search engine**
 
 **Tweaks:**
 
