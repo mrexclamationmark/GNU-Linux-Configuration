@@ -10,7 +10,7 @@ GNU-Linux-Scripts: https://github.com/mrtelekinesis/GNU-Linux-Scripts
 
 CFS tweaks: Tuned for low latency in a balanced way (To reduce processing overhead and maintain stablity).
 
-Filesystem tweaks: Pipes use 2Mb buffer.
+Filesystem tweaks: Pipes use a 2Mb buffer.
 
 Memory tweaks: Tuned to reduce CPU usage (giving more free CPU cycles for processing).
 
