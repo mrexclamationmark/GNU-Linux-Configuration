@@ -4,10 +4,10 @@ UUID=set-uuid-here	/	btrfs	rw,sync,async,dirsync,noauto,owner,nouser,dev,exec,su
 UUID=set-uuid-here /home	btrfs	rw,sync,async,dirsync,auto,owner,nouser,exec,noatime,lazytime,nosuid,nodev,autodefrag,space_cache=v2,commit=5 0 0
 
 proc /proc proc sync,async,dirsync,noatime,lazytime,hidepid=invisible 0 0
-tmpfs /run tmpfs sync,async,dirsync,noatime,lazytime,huge=advise 0 0
+tmpfs /run tmpfs sync,async,dirsync,noatime,lazytime,huge=always 0 0
 sysfs /sys sysfs sync,async,dirsync,noatime,lazytime 0 0
 configfs /sys/kernel/config configfs sync,async,dirsync,noatime,lazytime 0 0
 dev /dev devtmpfs sync,async,dirsync,noatime,lazytime 0 0
 devpts /dev/pts devpts sync,async,dirsync,noatime,lazytime,gid=5 0 0
-shm /dev/shm tmpfs sync,async,dirsync,noatime,lazytime,huge=advise 0 0
-#tmpfs /var/tmp/portage tmpfs size=95%,mode=775,gid=portage,uid=portage,huge=advise,sync,async,dirsync,noatime,lazytime 0 0
+shm /dev/shm tmpfs sync,async,dirsync,noatime,lazytime,huge=always 0 0
+#tmpfs /var/tmp/portage tmpfs size=95%,mode=775,gid=portage,uid=portage,huge=always,sync,async,dirsync,noatime,lazytime 0 0
