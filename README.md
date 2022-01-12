@@ -12,7 +12,7 @@ CFS tweaks: Tuned for low latency in a balanced way (To reduce processing overhe
 
 Filesystem tweaks: Pipes use 2Mb buffer.
 
-Memory tweaks: Tuned to get more free CPU cycles at the cost of more memory.
+Memory tweaks: Tuned to reduce CPU usage.
 
 Network tweaks: Network buffers tuned to 2Mb, using qdisc cake and TCP westwood to minimize bufferbloat (with the qdisc (OpenRC/Systemd) service).
 
