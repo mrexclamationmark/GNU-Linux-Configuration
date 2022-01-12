@@ -8,9 +8,9 @@ GNU-Linux-Scripts: https://github.com/mrtelekinesis/GNU-Linux-Scripts
 
 **Tweaks:**
 
-CFS tweaks: Tuned for low latency in a balanced way (To reduce CPU overhead).
+CFS tweaks: Tuned for low latency in a balanced way (To reduce CPU overhead and maintain stablity).
 
-Memory tweaks: Tuned to balance CPU usage and reduce memory footprint.
+Memory tweaks: Tuned to get more free CPU cycles at the cost of more memory.
 
 Network tweaks: Network buffers tuned to 2Mb, using qdisc cake and TCP westwood to minimize bufferbloat (with the qdisc (OpenRC/Systemd) service).
 
