@@ -6,9 +6,11 @@ GNU-Linux-Scripts: https://github.com/mrtelekinesis/GNU-Linux-Scripts
 
 **Please read the configuration files carefully before using it. You are responsible for actions done to your system. If you need some help understanding on what each of the settings do, there is many documentations out there to read as you can find them using a search engine**
 
-**Info:**
+**Philosophy:**
 
-mrtelekinesis's linux setup is based off ideas of obtaining more free CPU resources by disableing options (and enableing ones that are not enabled by default for certain purposes (low memory conditions, works for everybody, etc) ) and creating mathematical ideas of balance (which is used to tune certain options) while obtaining low latency and better throughput.
+mrtelekinesis's linux setup is based off ideas of obtaining more free CPU resources by disableing options (and enableing ones that are not enabled by default for certain purposes (low memory conditions, works for everybody, etc) ) and creating mathematical ideas of balance (which is used to tune certain options) to obtain low latency and better throughput.
+
+Security is also first before performance since it is important.
 
 **Tips:**
 
@@ -17,6 +19,8 @@ If you have a small amount of CPU cores (1, 2, 4 cores), do not use mesa_glthrea
 **Testing:**
 
 Configuration files were tested under x86-64 Gentoo Linux (OpenRC) and x86-64 Arch Linux (Systemd).
+
+Config was tested using a single application at a time to maximize latency and throughput on a very minimal arch/gentoo setup as possible.
 
 **Troubleshooting:**
 
