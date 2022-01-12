@@ -14,7 +14,7 @@ Filesystem tweaks: Pipes use 2Mb buffer.
 
 Memory tweaks: Tuned to reduce CPU usage.
 
-Network tweaks: Network buffers tuned to 2Mb, using qdisc cake and TCP westwood to minimize bufferbloat (with the qdisc (OpenRC/Systemd) service).
+Network tweaks: Network buffers tuned to 2Mb (TCP buffers are statically allocated), using qdisc cake and TCP westwood to minimize bufferbloat (with the qdisc (OpenRC/Systemd) service).
 
 I/O tweaks: Tuned for low latency using BFQ for mechanical harddrives, SSD's and flash memory use no I/O scheduler.
 
