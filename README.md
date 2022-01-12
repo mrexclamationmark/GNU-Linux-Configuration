@@ -20,7 +20,7 @@ If you have a small amount of CPU cores (1, 2, 4 cores), do not use mesa_glthrea
 
 Configuration files were tested under x86-64 Gentoo Linux (OpenRC) and x86-64 Arch Linux (Systemd).
 
-Config was tested using a single application at a time to maximize latency and throughput on a very minimal arch/gentoo setup as possible.
+Config was tested using a single application at a time to maximize latency and throughput on a very minimal arch/gentoo setup as possible, the more applications being used (multitasking) the more the ms values for CFS needs to go up(otherwise it will start to lag). in that case the kernel.sched_tunable_scaling needs to be set to 1
 
 **Troubleshooting:**
 
