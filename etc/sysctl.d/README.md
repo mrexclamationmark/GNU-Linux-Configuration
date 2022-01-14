@@ -1,8 +1,12 @@
 **Tweaks:**
 
-Network Tweaks: TCP memory buffers are statically allocated (which is better than dynamic allocations speed wise)
+Filesystem tweaks: Pipes use a 2Mb buffer.
 
-Memory Tweaks: Virtual memory is tuned to hold data in memory longer
+Memory tweaks: Tuned to reduce CPU usage (giving more free CPU cycles for processing) at the cost of more memory being used.
+
+Network tweaks: Network buffers tuned to 2Mb (TCP buffers are statically allocated, instead of dynamically allocated), using qdisc cake and TCP westwood to minimize bufferbloat (with the qdisc (OpenRC/Systemd) service).
+
+Security tweaks: Many security tweaks are turned on.
 
 **Info:**
 
