@@ -1,6 +1,6 @@
 **Tweaks:**
 
-CFS tweaks: Tuned to balance process latency vs processing latency.
+CFS tweaks: Tuned to balance latency vs throughput
 
 BFQ tweaks: Tuned for low latency.
 
