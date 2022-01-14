@@ -5,8 +5,3 @@ threadirqs can cause slow I/O transfers and other buggy driver related issues on
 Use cpuidle.governor=menu for tickless and cpuidle.governor=ladder for periodic tick kernels, you can also use cpuidle.governor=teo which is another alternative tickless idle governor.
 
 usbcore.authorized_default=0 can be used for systems (laptops, etc) that do not use any external usb devices (usb keyboards, usb mouses, usb storage drives, etc) or any internal usb devices, preventing rogue usbs from being initialized internally or externally. usbcore.authorized_default=2 can be used to unauthorize external usbs, but authorize internal usbs.
-
-
-**PREEMPT_DYNAMIC**
-
-The option preempt= is buggy(restarts/freezes) with kernels built without PREEMPT_DYNAMIC (CONFIG_PREEMPT_DYNAMIC=n) for now it is removed from GRUB_CMDLINE_LINUX.
