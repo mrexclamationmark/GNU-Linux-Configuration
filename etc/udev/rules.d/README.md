@@ -1,6 +1,6 @@
 **Tweaks:**
 
-CFS tweaks: Tuned to balance between process responsiveness vs processing latency.
+CFS tweaks: Tuned to low latency, these tweaks are more useful if you have minimal amount of processes in the system, if you have many processes than using tunable_scaling = 1 or 2 is better.
 
 BFQ tweaks: Tuned for low latency.
 
