@@ -6,4 +6,6 @@ Use cpuidle.governor=menu for tickless and cpuidle.governor=ladder for periodic 
 
 usbcore.authorized_default=0 can be used for systems (laptops, etc) that do not use any external usb devices (usb keyboards, usb mouses, usb storage drives, etc) or any internal usb devices, preventing rogue usbs from being initialized internally or externally. usbcore.authorized_default=2 can be used to unauthorize external usbs, but authorize internal usbs.
 
-you can use lockdown=confidentiality and debugfs=off if you do not plan to tune CFS tunables or if you change the fair.c/core.c tunables yourself for extra security.
+you can use lockdown=confidentiality and debugfs=off for extra security, if you do not plan to tune CFS tunables or if you change the fair.c/core.c tunables yourself.
+
+preempt and nohz options cannot be passed by grub if the kernel was compiled without tickless or preempt dynamic (it will freeze).
