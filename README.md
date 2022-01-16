@@ -10,6 +10,8 @@ GNU-Linux-Scripts: https://github.com/mrtelekinesis/GNU-Linux-Scripts
 
 mrtelekinesis's linux setup is based off ideas of obtaining more performance (more free CPU resources, etc) by disableing options (and enableing ones that are not enabled by default for certain purposes (low memory conditions, works out of the box, etc) ), configuring it in a way that it performs better and creating mathematical ideas of balance (which is used to tune certain options) to obtain low latency and better throughput along with stability.
 
+A balance between power usage and performance also prevents throttleing (which decreases performance).
+
 Security is also first before performance since it is important.
 
 **Tips:**
