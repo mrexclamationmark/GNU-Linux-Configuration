@@ -33,6 +33,7 @@ ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/fifo_expire
 ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/fifo_expire_sync}="500"
 ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/timeout_sync}="500"
 ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/slice_idle_us}="50000"
+ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/io_poll_delay}="5000"
 ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/io_timeout}="500000"
 ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/iostats}="0"
 ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/nr_requests}="500"
