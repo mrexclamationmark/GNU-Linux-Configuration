@@ -22,6 +22,8 @@ If you have a small amount of CPU cores (1, 2, 4 cores), do not use mesa_glthrea
 
 Configuration files were tested under x86-64 Gentoo Linux (OpenRC) and x86-64 Arch Linux (Systemd).
 
+These files work best on DIY (Do-it-yourself) linux distributions.
+
 The configuration was tested using a single application at a time to maximize latency and throughput on a very minimal arch/gentoo setup as possible.
 
 **Troubleshooting:**
