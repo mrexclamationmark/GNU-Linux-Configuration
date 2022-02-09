@@ -12,7 +12,7 @@ Change btrfs to the filesystem you are using.
 
 **nftables.conf**
 
-This is a basic ingress stateful firewall configuration (IPV4 and IPV6).
+This is a basic ingress stateful firewall configuration (IPV4 only).
 
 It only accepts packets from port 53 (DNS) and 443 (HTTPS) on inbound.
 
