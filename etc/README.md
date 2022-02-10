@@ -24,7 +24,7 @@ To use ingress, change NETDEVICE to the network interface name in ifconfig (wlan
 
 To use ingress with ethernet, you need to use arp saddr to accept ARP packets only from the router.
 
-To use ingress with wireless, you need to use ether saddr to accept EAP packets from the wireless devices located in the router (2.4Ghz device or 5Ghz device) and you also need to accept ARP packets from the routers ethernet device.
+To use ingress with wireless, you need to use ether saddr to accept EAP packets from the wireless devices located in the router (2.4Ghz device or 5Ghz device), most of the time, you can get away with just using arp saddr and not having to use ether saddr, you also need to accept ARP packets from the routers ethernet device.
 
 Using a stateful firewall (ct state) is more secure, but at the cost of performance (useful for servers, general PC computers).
 
