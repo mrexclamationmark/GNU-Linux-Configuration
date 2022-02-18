@@ -16,17 +16,13 @@ This is a basic ingress stateful firewall configuration (IPV4 only).
 
 It only accepts packets from port 53 (DNS) and 443 (HTTPS) on inbound.
 
-xx:xx:xx:xx:xx:xx is for filling in the blanks (the routers MAC address or devices in the router (2.4Ghz, 5Ghz or ethernet MAC addresses).
+To use ingress, change NETDEVICE to the network interface name in ifconfig (wlan0, eth0, etc)
+
+Fill in arp saddr ether xx:xx:xx:xx:xx:xx with your modem or routers ethernet MAC address (if you cannot figure out which MAC addresses to add, use wireshark to figure out how your computer is communicateing with the modem/router).
 
 Fill in ip saddr xxx.xxx.x.x with the default routers IP address to only accept ICMP packets from the router.
 
-To use ingress, change NETDEVICE to the network interface name in ifconfig (wlan0, eth0, etc)
-
-To use ingress with ethernet, you need to use arp saddr to accept ARP packets only from the router.
-
-To use ingress with wireless, you need to use ether saddr to accept EAP packets from the wireless devices located in the router (2.4Ghz device or 5Ghz device), most of the time, you can get away with just using arp saddr and not having to use ether saddr, you also need to accept ARP packets from the routers ethernet device.
-
-Using a stateful firewall (ct state) is more secure, but at the cost of performance (useful for servers, general PC computers).
+Using a stateful firewall (ct state) is more secure, but at the cost of performance (useful for servers, general PC computers, routers).
 
 Using a stateless firewall is less secure, but has better performance (useful for gaming PCs, where low latency is needed).
 
