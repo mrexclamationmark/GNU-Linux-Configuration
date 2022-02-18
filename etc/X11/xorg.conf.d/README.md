@@ -1,6 +1,4 @@
-For section InputDevice, the pointer software acceleration is disabled, this is useful to save some CPU cycles
-and if you have a mouse that does hardware acceleration, sometimes the mouse can be extremely slow that you
-have to use software pointer acceleration.
+For section InputDevice, the pointers software acceleration is disabled, this is useful to save some CPU cycles, sometimes the mouse can be extremely slow that you have to use software pointer acceleration.
 
 The identifier can be set to "HDMI-1" "VGA-1" "LVDS-1" depending on the monitors connection type.
 
