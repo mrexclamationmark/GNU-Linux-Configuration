@@ -10,6 +10,10 @@ Change UUID to match your partitions UUID in lsblk -f
 
 Change btrfs to the filesystem you are using.
 
+**hosts**
+
+Here you can put your favourite IPs to do domain name lookups locally (or build your own local DNS server), you need to use a DNS client first to lookup domains or use the routers DNS server and then add the IPs and domain names to the hosts file.
+
 **locale.gen**
 
 This file defines C/POSIX as the default locale with codeset ASCII, this only supports 127 characters and only supports english, but it is useful to speed up console commands (grep, etc).
