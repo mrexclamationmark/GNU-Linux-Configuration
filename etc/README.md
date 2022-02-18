@@ -30,14 +30,14 @@ Check the nftables wiki link on the main page for more information.
 
 **resolv.conf**
 
-Change nameserver to your routers default gateway address or 127.0.0.1 if using a dns client or the hosts file
+Change nameserver to your routers default gateway address or 127.0.0.1 if using a dns client or the hosts file.
 
 **wpa_supplicant.conf**
 
-Change country to the country code of your country (must be an ISO / IEC 3166 alpha2 country code)
+Change country to the country code of your country (must be an ISO / IEC 3166 alpha2 country code).
 
-Change bssid, bssid_whitelist to the routers MAC address
+Change bssid, bssid_whitelist to the routers wireless MAC address (either 2.4Ghz MAC address or 5Ghz MAC address).
 
-Change ssid to your routers SSID name
+Change ssid to your routers SSID name.
 
-Change psk to your routers password
+Change psk to your routers password.
