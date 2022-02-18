@@ -10,6 +10,10 @@ Change UUID to match your partitions UUID in lsblk -f
 
 Change btrfs to the filesystem you are using.
 
+**locale.gen**
+
+This file defines C/POSIX as the default locale with codeset ASCII, this only supports 127 characters and only supports english, but it is useful to speed up console commands (grep, etc).
+
 **nftables.conf**
 
 This is a basic ingress stateful firewall configuration (IPV4 only).
