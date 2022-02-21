@@ -43,7 +43,7 @@ ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/wbt_l
 ACTION=="add", SUBSYSTEM=="net", KERNEL=="lo", ATTR{mtu}="65536"
 ACTION=="add", SUBSYSTEM=="net", KERNEL=="lo", ATTR{tx_queue_len}="500"
 ACTION=="add", SUBSYSTEM=="net", KERNEL=="wl*|et*", ATTR{mtu}="1425"
-ACTION=="add", SUBSYSTEM=="net", KERNEL=="wl*|et*", ATTR{tx_queue_len}="500"
+ACTION=="add", SUBSYSTEM=="net", KERNEL=="wl*|et*", ATTR{tx_queue_len}="50"
 
 # CPU Governor
 ACTION=="add", SUBSYSTEM=="cpu", KERNEL=="cpu*", ATTR{cpufreq/scaling_governor}="schedutil"
