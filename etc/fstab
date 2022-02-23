@@ -3,7 +3,7 @@
 UUID=set-uuid-here	/	btrfs	rw,async,noauto,owner,nouser,dev,exec,suid,noatime,autodefrag,space_cache=v2,nodatacow,commit=5 0 0
 UUID=set-uuid-here /home	btrfs	rw,async,auto,owner,nouser,exec,noatime,nosuid,nodev,autodefrag,space_cache=v2,nodatacow,commit=5 0 0
 
-proc /proc proc async,noatime,hidepid=invisible 0 0
+proc /proc proc async,noatime,hidepid=0 0 0
 tmpfs /run tmpfs async,noatime,huge=always 0 0
 sysfs /sys sysfs async,noatime 0 0
 configfs /sys/kernel/config configfs async,noatime 0 0
