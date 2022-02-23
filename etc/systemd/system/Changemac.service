@@ -1,0 +1,8 @@
+[Unit]
+Description=Change MAC Systemd Service
+
+[Service]
+ExecStart=/bin/ip link set dev wlan0 address xx:xx:xx:xx:xx:xx
+
+[Install]
+WantedBy=multi-user.target
