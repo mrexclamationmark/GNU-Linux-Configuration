@@ -1,5 +1,7 @@
 [Unit]
 Description=Change MAC Systemd Service
+Before=network-pre.target
+Wants=network-pre.target
 
 [Service]
 ExecStart=/bin/ip link set dev wlan0 address xx:xx:xx:xx:xx:xx
