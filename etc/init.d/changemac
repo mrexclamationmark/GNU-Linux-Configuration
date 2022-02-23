@@ -1,0 +1,5 @@
+#!/sbin/openrc-run
+
+description="Change MAC OpenRC Service"
+command="/bin/ip"
+command_args="link set dev wlan0 address xx:xx:xx:xx:xx:xx"
