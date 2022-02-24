@@ -1,10 +1,9 @@
 [Unit]
 Description=Change MAC Systemd Service
-Before=network-pre.target
-Wants=network-pre.target
+Before=network.target
 
 [Service]
-ExecStart=/bin/ip link set dev wlan0 address xx:xx:xx:xx:xx:xx
+ExecStart=/sbin/ip link set dev wlan0 address xx:xx:xx:xx:xx:xx
 
 [Install]
 WantedBy=multi-user.target
