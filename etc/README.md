@@ -12,7 +12,7 @@ Change btrfs to the filesystem you are using.
 
 Some options are btrfs specific (autodefrag,space_cache=v2,nodatacow) you can delete these if you use another filesystem.
 
-Set hidepid=invisible for extra security (note this can cause some software to not function properly because it hides process IDs from the user).
+Set hidepid=invisible for extra security (note that this can cause some software to not function properly because it hides process IDs from the user).
 
 **hosts**
 
