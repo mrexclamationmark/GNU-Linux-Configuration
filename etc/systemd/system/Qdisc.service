@@ -2,7 +2,7 @@
 Description=Qdisc Systemd Service
 
 [Service]
-ExecStart=/sbin/tc qdisc replace dev wlan0 root netem limit 50 delay 2.5ms rate 16Mbit
+ExecStart=/sbin/tc qdisc replace dev wlan0 root netem limit 250 delay 2.5ms rate 16Mbit
 
 [Install]
 WantedBy=multi-user.target
