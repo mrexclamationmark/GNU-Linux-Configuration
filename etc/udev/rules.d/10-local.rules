@@ -18,13 +18,13 @@ ACTION=="add", SUBSYSTEM=="usb", ATTR{power/control}="on"
 #ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="xxxx", ATTR{idProduct}=="xxxx", ATTR{authorized}="1"
 
 # CPU Scheduler
-ACTION=="add", SUBSYSTEM=="cpu", RUN+="/bin/sh -c 'echo 5000000 > /sys/kernel/debug/sched/latency_ns'"
-ACTION=="add", SUBSYSTEM=="cpu", RUN+="/bin/sh -c 'echo 500000000 > /sys/kernel/debug/sched/migration_cost_ns'"
-ACTION=="add", SUBSYSTEM=="cpu", RUN+="/bin/sh -c 'echo 50000000 > /sys/kernel/debug/sched/min_granularity_ns'"
-ACTION=="add", SUBSYSTEM=="cpu", RUN+="/bin/sh -c 'echo 500 > /sys/kernel/debug/sched/nr_migrate'"
+ACTION=="add", SUBSYSTEM=="cpu", RUN+="/bin/sh -c 'echo 1000000 > /sys/kernel/debug/sched/latency_ns'"
+ACTION=="add", SUBSYSTEM=="cpu", RUN+="/bin/sh -c 'echo 250000000 > /sys/kernel/debug/sched/migration_cost_ns'"
+ACTION=="add", SUBSYSTEM=="cpu", RUN+="/bin/sh -c 'echo 10000000 > /sys/kernel/debug/sched/min_granularity_ns'"
+ACTION=="add", SUBSYSTEM=="cpu", RUN+="/bin/sh -c 'echo 250 > /sys/kernel/debug/sched/nr_migrate'"
 ACTION=="add", SUBSYSTEM=="cpu", RUN+="/bin/sh -c 'echo full > /sys/kernel/debug/sched/preempt'"
 ACTION=="add", SUBSYSTEM=="cpu", RUN+="/bin/sh -c 'echo 0 > /sys/kernel/debug/sched/tunable_scaling'"
-ACTION=="add", SUBSYSTEM=="cpu", RUN+="/bin/sh -c 'echo 5000000 > /sys/kernel/debug/sched/wakeup_granularity_ns'"
+ACTION=="add", SUBSYSTEM=="cpu", RUN+="/bin/sh -c 'echo 500000 > /sys/kernel/debug/sched/wakeup_granularity_ns'"
 
 # I/O Scheduler
 ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/scheduler}="bfq"
