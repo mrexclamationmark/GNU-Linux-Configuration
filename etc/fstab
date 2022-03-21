@@ -7,7 +7,7 @@ proc /proc proc async,noatime,hidepid=0 0 0
 tmpfs /run tmpfs async,noatime,huge=always 0 0
 sysfs /sys sysfs async,noatime 0 0
 configfs /sys/kernel/config configfs async,noatime 0 0
-dev /dev devtmpfs async,noatime 0 0
+dev /dev devtmpfs async,noatime,nosuid,noexec 0 0
 devpts /dev/pts devpts async,noatime,gid=5 0 0
 shm /dev/shm tmpfs async,noatime,huge=always 0 0
 #tmpfs /var/tmp/portage tmpfs size=95%,mode=775,gid=portage,uid=portage,huge=always,async,noatime 0 0
