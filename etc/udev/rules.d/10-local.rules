@@ -11,6 +11,10 @@ ACTION=="add", SUBSYSTEM=="*", ATTR{power/autosuspend}="0"
 ACTION=="add", SUBSYSTEM=="*", ATTR{power/control}="auto"
 ACTION=="add", SUBSYSTEM=="usb", ATTR{power/control}="on"
 
+# Turn off LEDs
+ACTION=="add", SUBSYSTEM=="leds", ATTR{brightness}="0"
+ACTION=="add", SUBSYSTEM=="leds", ATTR{trigger}="none"
+
 # USB Autosuspend Whitelist
 #ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="xxxx", ATTR{idProduct}=="xxxx", ATTR{power/control}="on"
 
