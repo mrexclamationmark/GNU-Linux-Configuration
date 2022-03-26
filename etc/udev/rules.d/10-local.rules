@@ -23,6 +23,7 @@ ACTION=="add", SUBSYSTEM=="leds", ATTR{trigger}="none"
 
 # CPU Scheduler
 ACTION=="add", SUBSYSTEM=="cpu", RUN+="/bin/sh -c 'echo 5000000 > /sys/kernel/debug/sched/latency_ns'"
+ACTION=="add", SUBSYSTEM=="cpu", RUN+="/bin/sh -c 'echo 10000000 > /sys/kernel/debug/sched/idle_min_granularity_ns'"
 ACTION=="add", SUBSYSTEM=="cpu", RUN+="/bin/sh -c 'echo 250000000 > /sys/kernel/debug/sched/migration_cost_ns'"
 ACTION=="add", SUBSYSTEM=="cpu", RUN+="/bin/sh -c 'echo 10000000 > /sys/kernel/debug/sched/min_granularity_ns'"
 ACTION=="add", SUBSYSTEM=="cpu", RUN+="/bin/sh -c 'echo 250 > /sys/kernel/debug/sched/nr_migrate'"
