@@ -32,10 +32,6 @@ To use ingress, change NETDEVICE to the network interface name in ifconfig (wlan
 
 Fill in arp saddr ether xx:xx:xx:xx:xx:xx with your modem or routers ethernet MAC address (if you cannot figure out which MAC addresses to add, use wireshark to figure out how your computer is communicateing with the modem/router).
 
-Using a stateful firewall (ct state) is more secure, but at the cost of performance (useful for servers, general PC computers, routers).
-
-Using a stateless firewall is less secure, but has better performance (useful for gaming PCs, where low latency is needed).
-
 Check the nftables wiki link on the main page for more information.
 
 **resolv.conf**
