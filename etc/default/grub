@@ -2,7 +2,7 @@
 # After modifying, run grub-mkconfig -o /boot/grub/grub.cfg
 # Location:/Documentation/admin-guide/kernel-parameters.txt
 
-GRUB_DISTRIBUTOR="mrtelekinesis"
+GRUB_DISTRIBUTOR="!"
 
 # Default menu entry
 GRUB_DEFAULT=0
