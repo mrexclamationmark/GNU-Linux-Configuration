@@ -1,10 +1,10 @@
+**Please read the files before using them.**
+
 **Navigation:**
 
 Linux-Kernel-Configuration: https://github.com/mrtelekinesis/Linux-Kernel-Configuration
  
 GNU-Linux-Scripts: https://github.com/mrtelekinesis/GNU-Linux-Scripts
-
-**Please read the files before using them.**
 
 **Philosophy:**
 
