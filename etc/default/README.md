@@ -10,6 +10,6 @@ You can use lockdown=confidentiality and debugfs=off for extra security, if you 
 
 preempt and nohz options cannot be passed by grub if the kernel was compiled without tickless or preempt dynamic (it will freeze).
 
-usbhid.mousepoll, usbhid.jspoll, usbhid.kbpoll is set to 0 (uses default polling rate of your USB mouse, keyboard, joysticks)
+usbhid.mousepoll, usbhid.jspoll, usbhid.kbpoll is set to 0 (uses default polling rate of your USB mouse, keyboard, joystick)
 
 you can change this interval based on milllisecond values (10 = 100Hz, 8 = 125Hz, 5 = 200Hz, 4 = 250Hz, 2 = 500Hz, 1 = 1000Hz)
