@@ -2,9 +2,9 @@
 
 **Navigation:**
 
-Linux-Kernel-Configuration: https://github.com/exclamationmarked/Linux-Kernel-Configuration
+Linux-Kernel-Configuration: https://github.com/mrexclamationmark/Linux-Kernel-Configuration
  
-GNU-Linux-Scripts: https://github.com/exclamationmarked/GNU-Linux-Scripts
+GNU-Linux-Scripts: https://github.com/mrexclamationmark/GNU-Linux-Scripts
 
 **Philosophy:**
 
