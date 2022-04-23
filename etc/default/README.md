@@ -12,4 +12,6 @@ preempt and nohz options cannot be passed by grub if the kernel was compiled wit
 
 usbhid.mousepoll, usbhid.jspoll, usbhid.kbpoll is set to 5ms = 200Hz
 
-you can change this interval based on milllisecond values (10 = 100Hz, 8 = 125Hz, 5 = 200Hz, 4 = 250Hz, 2 = 500Hz, 1 = 1000Hz)
+you can change this interval based on milllisecond values (10 = 100Hz, 8 = 125Hz, 5 = 200Hz, 4 = 250Hz, 2 = 500Hz, 1 = 1000Hz or 0 which uses your mouse, keyboard, joystick default polling rate)
+
+some usb HIDs have unnecessary polling rates (like 10000Hz) and its the reason why 10ms is the default polling rate.
