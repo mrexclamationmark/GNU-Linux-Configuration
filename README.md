@@ -2,13 +2,13 @@
 
 **Navigation:**
 
-Linux-Kernel-Configuration: https://github.com/mrtelekinesis/Linux-Kernel-Configuration
+Linux-Kernel-Configuration: https://github.com/exclamationmarked/Linux-Kernel-Configuration
  
-GNU-Linux-Scripts: https://github.com/mrtelekinesis/GNU-Linux-Scripts
+GNU-Linux-Scripts: https://github.com/exclamationmarked/GNU-Linux-Scripts
 
 **Philosophy:**
 
-mrtelekinesis's linux setup is based on ideas of obtaining more performance (more free CPU resources, etc) by disableing options (and enableing ones that are not enabled by default for certain purposes (low memory conditions, works out of the box, etc) ), configuring it in a way that it performs better and tuning options to balance to obtain stability between low latency and throughput.
+This linux setup is based on ideas of obtaining more performance (more free CPU resources, etc) by disableing options (and enableing ones that are not enabled by default for certain purposes (low memory conditions, works out of the box, etc) ), configuring it in a way that it performs better and tuning options to balance to obtain stability between low latency and throughput.
 
 A balance between power levels also prevents throttleing (which decreases performance), and is more power stable.
 
