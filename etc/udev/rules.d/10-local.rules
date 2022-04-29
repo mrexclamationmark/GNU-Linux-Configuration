@@ -34,15 +34,15 @@ ACTION=="add", SUBSYSTEM=="cpu", RUN+="/bin/sh -c 'echo 5000000 > /sys/kernel/de
 # I/O Scheduler
 ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/scheduler}="bfq"
 ACTION=="add", SUBSYSTEM=="block", KERNEL=="nvme*|mmcblk*", ATTR{queue/scheduler}="none"
-ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/fifo_expire_async}="500"
-ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/fifo_expire_sync}="500"
-ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/timeout_sync}="500"
-ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/slice_idle_us}="50000"
-ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/io_timeout}="500000"
+ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/fifo_expire_async}="25"
+ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/fifo_expire_sync}="25"
+ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/timeout_sync}="25"
+ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/slice_idle_us}="25000"
+ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/io_timeout}="25000"
 ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/iostats}="0"
-ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/nr_requests}="500"
-ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/throttle_sample_time}="50"
-ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/wbt_lat_usec}="50000"
+ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/nr_requests}="25"
+ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/throttle_sample_time}="25"
+ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/wbt_lat_usec}="25000"
 
 # Network Scheduler
 ACTION=="add", SUBSYSTEM=="net", KERNEL=="lo", ATTR{mtu}="65536"
