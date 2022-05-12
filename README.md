@@ -8,11 +8,9 @@ GNU-Linux-Scripts: https://github.com/mrexclamationmark/GNU-Linux-Scripts
 
 **Philosophy:**
 
-This linux setup is based on ideas of obtaining more performance (more free CPU resources, etc) by disableing options (and enableing ones that are not enabled by default for certain purposes (low memory conditions, works out of the box, etc) ), configuring it in a way that it performs better and tuning options to balance and obtain stability between low latency and throughput.
+This linux setup is based on ideas of obtaining more performance (more free CPU resources, etc) by disabling options (and enabling ones that are not enabled by default for certain purposes (low memory conditions, works out of the box, etc) ), configuring it in a way that it performs better and tuning options to balance and obtain stability between low latency/throughput.
 
-A balance between power levels also prevents throttleing (which decreases performance), and is more power stable.
-
-Security is also first before performance since it is important.
+Security is first before performance since it is important.
 
 **Tips:**
 
