@@ -1,4 +1,4 @@
-**Please read the files before using them.**
+**Please read the files and make backups before using them.**
 
 **Navigation:**
 
