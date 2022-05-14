@@ -1,0 +1,27 @@
+#!/sbin/openrc-run
+# This service is useful for connecting to external NAT systems
+# where a dhcp client is not required.
+
+description="StaticNET OpenRC Service"
+
+INTERFACE=setinterfacehere
+SOURCEIP=setsourceiphere
+DESTINATIONIP=setdestinationiphere
+
+start() {
+bringdeviceup
+setdeviceip
+setdevicegateway
+}
+
+bringdeviceup() {
+ifconfig ${INTERFACE} up
+}
+
+setdeviceip() {
+ifconfig ${INTERFACE} ${SOURCEIP}
+}
+
+setdevicegateway() {
+route add default gw ${DESTINATIONIP}
+}
