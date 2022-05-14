@@ -20,7 +20,7 @@ Here you can put your favourite IPs to do domain name lookups locally (or build 
 
 **locale.gen**
 
-This file defines C/POSIX as the default locale with codeset ASCII, this only supports 127 characters and only supports english, but it is useful to speed up console commands (grep, etc).
+This file defines C/POSIX as the default locale with codeset ASCII, this only supports 127 characters and only supports latin characters, but it is useful to speed up console commands (grep, etc).
 
 **nftables.conf**
 
