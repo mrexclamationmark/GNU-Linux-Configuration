@@ -3,6 +3,7 @@ Description=Change MAC Systemd Service
 Before=network.target
 
 [Service]
+Type=oneshot
 ExecStart=/sbin/ip link set dev wlan0 address xx:xx:xx:xx:xx:xx
 
 [Install]
