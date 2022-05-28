@@ -4,7 +4,7 @@ Before=network.target
 
 [Service]
 Type=oneshot
-ExecStart=/sbin/ip link set dev wlan0 address xx:xx:xx:xx:xx:xx
+ExecStart=/usr/bin/ip link set dev wlan0 address xx:xx:xx:xx:xx:xx
 
 [Install]
 WantedBy=multi-user.target
