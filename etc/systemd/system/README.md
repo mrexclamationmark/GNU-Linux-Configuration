@@ -26,9 +26,4 @@ copy StaticNET.service to /etc/systemd/system/
 
 then go to the console and type systemctl enable StaticNET.service
 
-change $INTERFACE to your network device (use ifconfig to find out).
-
-change $SOURCEIP to your desired source ip address
-
-change $DESTINATIONIP to your desired destination ip address
-
+set $INTERFACE to your interface (use ifconfig to find out), set $SOURCEIP to an IP (192.168.0.1, etc), set $DESTINATIONIP to the interfaces ip address of your NAT device (192.168.0.0, etc) this will be the gateway.
