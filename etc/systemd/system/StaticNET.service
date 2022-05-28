@@ -6,7 +6,7 @@ Before=network.target
 Type=oneshot
 ExecStart=/usr/bin/ifconfig $INTERFACE up
 ExecStart=/usr/bin/ifconfig $INTERFACE $SOURCEIP
-ExecStart=/usr/bin/route add default gw $DESTINTATIONIP
+ExecStart=/usr/bin/route add default gw $DESTINATIONIP
 
 [Install]
 WantedBy=multi-user.target
