@@ -1,0 +1,12 @@
+[Unit]
+Description=StaticNET Systemd Service
+Before=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/ifconfig $INTERFACE up
+ExecStart=/usr/bin/ifconfig $INTERFACE $SOURCEIP
+ExecStart=/usr/bin/route add default gw $DESTINTATIONIP
+
+[Install]
+WantedBy=multi-user.target
