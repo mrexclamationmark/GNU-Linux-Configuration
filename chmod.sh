@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Use this script to set the necessary file permissions and execute bits on OpenRC scripts
+
 # Set file owner
 chown root:root /etc/X11/xorg.conf.d/10-xorg.conf
 chown root:root /etc/default/grub
