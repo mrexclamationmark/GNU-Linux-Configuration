@@ -34,6 +34,10 @@ Fill in arp saddr ether xx:xx:xx:xx:xx:xx with your modem or routers ethernet MA
 
 Check the nftables wiki link on the main page for more information.
 
+**limits**
+
+Change user to your username.
+
 **resolv.conf**
 
 Change nameserver to your routers default gateway address or 127.0.0.1 if using a dns client or the hosts file.
