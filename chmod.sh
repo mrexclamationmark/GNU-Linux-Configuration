@@ -31,9 +31,9 @@ chown root:root /etc/resolv.conf
 chmod 644 /etc/X11/xorg.conf.d/10-xorg.conf
 chmod 644 /etc/default/grub
 chmod 644 /etc/fonts/local.conf
-chmod 644 /etc/init.d/changemac
-chmod 644 /etc/init.d/qdisc
-chmod 644 /etc/init.d/staticnet
+chmod 744 /etc/init.d/changemac
+chmod 744 /etc/init.d/qdisc
+chmod 744 /etc/init.d/staticnet
 chmod 644 /etc/iptables/iptables.conf
 chmod 644 /etc/modprobe.d/blacklist.conf
 chmod 644 /etc/profile.d/globalvars.sh
@@ -51,8 +51,3 @@ chmod 644 /etc/limits
 chmod 644 /etc/locale.gen
 chmod 644 /etc/nftables.conf
 chmod 644 /etc/resolv.conf
-
-# Set execute bits
-chmod +x /etc/init.d/changemac
-chmod +x /etc/init.d/qdisc
-chmod +x /etc/init.d/staticnet
