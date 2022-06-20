@@ -14,7 +14,7 @@ Security is first before performance since it is important.
 
 **Tips:**
 
-If you have a small amount of CPU cores (1, 2, 4 cores), do not use mesa_glthread or threadirqs (with less cores, less threads is usually better).
+If you have are using a single core CPU, do not use threadirqs or mesa_glthread (threads work better with multiple cores).
 
 **Testing:**
 
