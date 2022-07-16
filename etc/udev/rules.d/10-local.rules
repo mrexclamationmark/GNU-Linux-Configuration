@@ -35,17 +35,17 @@ ACTION=="add", SUBSYSTEM=="cpu", RUN+="/bin/sh -c 'echo 5000000 > /sys/kernel/de
 ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/scheduler}="bfq"
 ACTION=="add", SUBSYSTEM=="block", KERNEL=="nvme*|mmcblk*", ATTR{queue/scheduler}="kyber"
 # BFQ
-ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/fifo_expire_async}="25"
-ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/fifo_expire_sync}="25"
-ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/timeout_sync}="25"
+ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/fifo_expire_async}="100"
+ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/fifo_expire_sync}="100"
+ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/timeout_sync}="100"
 ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*", ATTR{queue/iosched/slice_idle_us}="25000"
 # Kyber
 ACTION=="add", SUBSYSTEM=="block", KERNEL=="nvme*|mmcblk*", ATTR{queue/iosched/read_lat_nsec}="25000000"
 ACTION=="add", SUBSYSTEM=="block", KERNEL=="nvme*|mmcblk*", ATTR{queue/iosched/write_lat_nsec}="25000000"
 # None
-ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/io_timeout}="25000"
+ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/io_timeout}="100000"
 ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/iostats}="0"
-ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/nr_requests}="25"
+ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/nr_requests}="5"
 ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/throttle_sample_time}="25"
 ACTION=="add", SUBSYSTEM=="block", KERNEL=="sd*|nvme*|mmcblk*", ATTR{queue/wbt_lat_usec}="25000"
 
