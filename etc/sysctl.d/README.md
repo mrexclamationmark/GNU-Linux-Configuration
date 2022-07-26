@@ -6,6 +6,8 @@ Sysctl option kernel.modules_disabled = 1 is commented, if you don't use modules
 
 net.ipv4.tcp_timestamps can be set to 1 for extra security against remote attackers (usually server computers need this).
 
+for net.ipv4.tcp_congestion_control, use westwood for highly congested networks, veno for wireless links and htcp for wired links
+
 **Tips:**
 
 The sync; command is a useful command to write out all cached data to disk (after writeing files, etc).
