@@ -6,7 +6,7 @@ Sysctl option kernel.modules_disabled = 1 is commented, if you don't use modules
 
 net.ipv4.tcp_timestamps can be set to 1 for extra security against remote attackers (usually server computers need this).
 
-for net.ipv4.tcp_congestion_control, use westwood for highly congested networks, veno for wireless links and htcp for wired links
+for net.ipv4.tcp_congestion_control, use westwood for highly congested networks and lp for wired/wireless links with networks with no congestion.
 
 **Tips:**
 
